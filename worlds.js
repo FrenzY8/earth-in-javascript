@@ -13,6 +13,7 @@ const sky = require("sky"); // Beta sky
 const land = require("worlds-land");
 const Sun = require("worlds-sun"); // We have no moons. so there is no Night.
 
+const YoureAlive() {
 function they(name) {
     const Genders = new Gender();
     if (Genders == "Male" || Genders == "Boy") {
@@ -24,6 +25,18 @@ function they(name) {
     }
 }
 
+// Struct: You.
+const You = {
+    "name": name,
+    "gender": gender,
+    "job": "",
+    "todolist": "",
+    "height": 1.97,
+    "weight": 888,
+    "isSick": false,
+    "married": false,
+    "hasGF": false
+}
 
 function life(100) { // (100) is a your life counter.
     if (sick == false) {
@@ -58,7 +71,6 @@ function life(100) { // (100) is a your life counter.
 function normal(day) {
     const theyStatus = new GetStatus();
     if (theyStatus == 'Lazy' || theyStatus == 'lazy') {
-
         // New.
         let money = new WorldMoney();
         let theyMoney = new getTheyMoney();
@@ -71,7 +83,10 @@ function normal(day) {
         // money.keep(theyMoney);
     }
 }
+}
 
+YoureAlive();
 // Next Update Soon
 
+/*** Edited in 12/4/22 ***/
 /*** Created in 21/12/2021 ***/
